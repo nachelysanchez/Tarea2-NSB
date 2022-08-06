@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tarea2_NSB.Ejercicio1;
 
 namespace Tarea2_NSB
 {
@@ -15,6 +16,12 @@ namespace Tarea2_NSB
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void nominaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NominaForm nomina = new NominaForm();
+            nomina.Show();
         }
     }
 }
