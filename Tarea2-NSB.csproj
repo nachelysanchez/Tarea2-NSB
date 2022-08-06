@@ -60,11 +60,23 @@
     <Compile Include="Ejercicio1\NominaForm.Designer.cs">
       <DependentUpon>NominaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ejercicio2\rAereo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\rAereo.Designer.cs">
+      <DependentUpon>rAereo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejercicio2\rCarro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio2\rCarro.Designer.cs">
       <DependentUpon>rCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio2\rMaritimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\rMaritimo.Designer.cs">
+      <DependentUpon>rMaritimo.cs</DependentUpon>
     </Compile>
     <Compile Include="Ejercicio2\VehiculoGeneralFrm.cs">
       <SubType>Form</SubType>
@@ -89,8 +101,14 @@
     <EmbeddedResource Include="Ejercicio1\NominaForm.resx">
       <DependentUpon>NominaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2\rAereo.resx">
+      <DependentUpon>rAereo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2\rCarro.resx">
       <DependentUpon>rCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2\rMaritimo.resx">
+      <DependentUpon>rMaritimo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2\VehiculoGeneralFrm.resx">
       <DependentUpon>VehiculoGeneralFrm.cs</DependentUpon>
