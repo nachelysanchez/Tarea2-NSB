@@ -61,36 +61,8 @@ namespace Tarea2_NSB.Clases
         {
             set
             {
-                double sueldoAnual = sueldoBase * 12;
-                double isrAnual = 0;
-
-                if (sueldoAnual < 416220.02)
-                {
-                    valorIRS = 0;
-                }
-                else
-                {
-                    if (sueldoAnual >= 416220.01 && sueldoAnual < 624329.01)
-                    {
-                        isrAnual = ((624329.00 - sueldoAnual) * 15 / 100);
-
-                    }
-                    else
-                    {
-                        if (sueldoAnual >= 624329.01 && sueldoAnual < 867123.01)
-                        {
-                            isrAnual = ((624329.00 - 416220.01) * 15 / 100) + ((sueldoAnual - 624329.01) * 20 / 100);
-                        }
-                        else
-                        {
-                            if (sueldoAnual >= 867123.01)
-                            {
-                                isrAnual = ((sueldoAnual - 867123.01) * 25 / 100);
-                            }
-                        }
-                    }
-                    valorIRS = isrAnual / 12;
-                }
+                valorIRS = value;
+                
             }
             get
             {

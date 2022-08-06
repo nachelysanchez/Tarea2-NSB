@@ -27,5 +27,15 @@ namespace Tarea2_NSB.Ejercicio1
             descuentosTextBox.Text = nomina.TotalDescuentos.ToString("N2");
             SueldoNetoTextBox.Text = nomina.SueldoNeto.ToString("N2");
         }
+
+        private void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            irsTextBox.Clear();
+            afpTextBox.Clear();
+            arsTextBox.Clear();
+            descuentosTextBox.Clear();
+            SueldoNetoTextBox.Clear();
+            SueldoTextBox.Clear();
+        }
     }
 }

@@ -205,6 +205,7 @@ namespace Tarea2_NSB.Ejercicio1
             this.LimpiarButton.TabIndex = 5;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
+            this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
             // 
             // NominaForm
             // 
