@@ -39,7 +39,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             // numRuedastxt
             // 
-            this.numRuedastxt.Location = new System.Drawing.Point(200, 205);
+            this.numRuedastxt.Location = new System.Drawing.Point(200, 169);
             this.numRuedastxt.Name = "numRuedastxt";
             this.numRuedastxt.Size = new System.Drawing.Size(268, 20);
             this.numRuedastxt.TabIndex = 24;
@@ -48,7 +48,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 207);
+            this.label1.Location = new System.Drawing.Point(36, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 18);
             this.label1.TabIndex = 23;
@@ -56,7 +56,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             // numPuertastxt
             // 
-            this.numPuertastxt.Location = new System.Drawing.Point(200, 243);
+            this.numPuertastxt.Location = new System.Drawing.Point(200, 207);
             this.numPuertastxt.Name = "numPuertastxt";
             this.numPuertastxt.Size = new System.Drawing.Size(268, 20);
             this.numPuertastxt.TabIndex = 26;
@@ -65,7 +65,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 245);
+            this.label2.Location = new System.Drawing.Point(36, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 18);
             this.label2.TabIndex = 25;
@@ -106,6 +106,10 @@ namespace Tarea2_NSB.Ejercicio2
             this.Name = "rCarro";
             this.Text = "Registro de Vehiculo Terrestre";
             this.Load += new System.EventHandler(this.rCarro_Load);
+            this.Controls.SetChildIndex(this.marcaTextBox, 0);
+            this.Controls.SetChildIndex(this.anioTextBox, 0);
+            this.Controls.SetChildIndex(this.placaTextBox, 0);
+            this.Controls.SetChildIndex(this.combustibleTextBox, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.numRuedastxt, 0);
             this.Controls.SetChildIndex(this.label2, 0);

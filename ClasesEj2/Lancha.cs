@@ -10,6 +10,20 @@ namespace Tarea2_NSB.ClasesEj2
     {
         private int tamanio;
 
+        private static List<Lancha> lanchas = new List<Lancha>();
+
+        protected List<Lancha> Lanchas
+        {
+            get
+            {
+                return lanchas;
+            }
+            set
+            {
+                lanchas = value;
+            }
+        }
+
         protected int Tamanio
         {
             set

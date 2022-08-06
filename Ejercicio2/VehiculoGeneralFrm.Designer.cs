@@ -33,12 +33,10 @@ namespace Tarea2_NSB.Ejercicio2
             this.placaTextBox = new System.Windows.Forms.TextBox();
             this.anioTextBox = new System.Windows.Forms.TextBox();
             this.marcaTextBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SalirButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,6 +53,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.placaTextBox.Name = "placaTextBox";
             this.placaTextBox.Size = new System.Drawing.Size(268, 20);
             this.placaTextBox.TabIndex = 19;
+            this.placaTextBox.TextChanged += new System.EventHandler(this.placaTextBox_TextChanged);
             // 
             // anioTextBox
             // 
@@ -62,6 +61,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.anioTextBox.Name = "anioTextBox";
             this.anioTextBox.Size = new System.Drawing.Size(268, 20);
             this.anioTextBox.TabIndex = 18;
+            this.anioTextBox.TextChanged += new System.EventHandler(this.anioTextBox_TextChanged);
             // 
             // marcaTextBox
             // 
@@ -69,16 +69,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.marcaTextBox.Name = "marcaTextBox";
             this.marcaTextBox.Size = new System.Drawing.Size(268, 20);
             this.marcaTextBox.TabIndex = 17;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 18);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "¿Ya se reservó?";
+            this.marcaTextBox.TextChanged += new System.EventHandler(this.marcaTextBox_TextChanged);
             // 
             // label6
             // 
@@ -120,15 +111,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.label3.TabIndex = 12;
             this.label3.Text = "Marca";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(200, 173);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // SalirButton
             // 
             this.SalirButton.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,34 +128,30 @@ namespace Tarea2_NSB.Ejercicio2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 240);
             this.Controls.Add(this.SalirButton);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.combustibleTextBox);
             this.Controls.Add(this.placaTextBox);
             this.Controls.Add(this.anioTextBox);
             this.Controls.Add(this.marcaTextBox);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "VehiculoGeneralFrm";
-            this.Text = "VehiculoGeneralFrm";
+            this.Load += new System.EventHandler(this.VehiculoGeneralFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox combustibleTextBox;
-        private System.Windows.Forms.TextBox placaTextBox;
-        private System.Windows.Forms.TextBox anioTextBox;
-        private System.Windows.Forms.TextBox marcaTextBox;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button SalirButton;
+        protected System.Windows.Forms.TextBox combustibleTextBox;
+        protected System.Windows.Forms.TextBox placaTextBox;
+        protected System.Windows.Forms.TextBox anioTextBox;
+        protected System.Windows.Forms.TextBox marcaTextBox;
     }
 }

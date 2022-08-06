@@ -21,5 +21,25 @@ namespace Tarea2_NSB.Ejercicio2
         {
             this.Close();
         }
+
+        private void marcaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void anioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void placaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VehiculoGeneralFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace Tarea2_NSB.Ejercicio2
         /// </summary>
         private void InitializeComponent()
         {
-            this.Velocidadtxt = new System.Windows.Forms.TextBox();
+            this.Tamanotxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.numAlastxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,18 +37,18 @@ namespace Tarea2_NSB.Ejercicio2
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Velocidadtxt
+            // Tamanotxt
             // 
-            this.Velocidadtxt.Location = new System.Drawing.Point(200, 237);
-            this.Velocidadtxt.Name = "Velocidadtxt";
-            this.Velocidadtxt.Size = new System.Drawing.Size(268, 20);
-            this.Velocidadtxt.TabIndex = 34;
+            this.Tamanotxt.Location = new System.Drawing.Point(200, 203);
+            this.Tamanotxt.Name = "Tamanotxt";
+            this.Tamanotxt.Size = new System.Drawing.Size(268, 20);
+            this.Tamanotxt.TabIndex = 34;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 239);
+            this.label2.Location = new System.Drawing.Point(36, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 18);
             this.label2.TabIndex = 33;
@@ -56,7 +56,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             // numAlastxt
             // 
-            this.numAlastxt.Location = new System.Drawing.Point(200, 199);
+            this.numAlastxt.Location = new System.Drawing.Point(200, 165);
             this.numAlastxt.Name = "numAlastxt";
             this.numAlastxt.Size = new System.Drawing.Size(268, 20);
             this.numAlastxt.TabIndex = 32;
@@ -65,7 +65,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 201);
+            this.label1.Location = new System.Drawing.Point(36, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 18);
             this.label1.TabIndex = 31;
@@ -80,6 +80,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.GuardarButton.TabIndex = 35;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // label8
             // 
@@ -99,17 +100,21 @@ namespace Tarea2_NSB.Ejercicio2
             this.ClientSize = new System.Drawing.Size(617, 287);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.GuardarButton);
-            this.Controls.Add(this.Velocidadtxt);
+            this.Controls.Add(this.Tamanotxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numAlastxt);
             this.Controls.Add(this.label1);
             this.Name = "rMaritimo";
             this.Text = "Registro de Vehiculo Maritimo";
             this.Load += new System.EventHandler(this.rMaritimo_Load);
+            this.Controls.SetChildIndex(this.marcaTextBox, 0);
+            this.Controls.SetChildIndex(this.anioTextBox, 0);
+            this.Controls.SetChildIndex(this.placaTextBox, 0);
+            this.Controls.SetChildIndex(this.combustibleTextBox, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.numAlastxt, 0);
             this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.Velocidadtxt, 0);
+            this.Controls.SetChildIndex(this.Tamanotxt, 0);
             this.Controls.SetChildIndex(this.GuardarButton, 0);
             this.Controls.SetChildIndex(this.label8, 0);
             this.ResumeLayout(false);
@@ -119,7 +124,7 @@ namespace Tarea2_NSB.Ejercicio2
 
         #endregion
 
-        private System.Windows.Forms.TextBox Velocidadtxt;
+        private System.Windows.Forms.TextBox Tamanotxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox numAlastxt;
         private System.Windows.Forms.Label label1;

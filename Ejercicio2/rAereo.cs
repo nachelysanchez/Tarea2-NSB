@@ -21,5 +21,25 @@ namespace Tarea2_NSB.Ejercicio2
         {
 
         }
+
+        private void Velocidadtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numAlastxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

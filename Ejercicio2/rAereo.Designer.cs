@@ -39,37 +39,41 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             // Velocidadtxt
             // 
-            this.Velocidadtxt.Location = new System.Drawing.Point(200, 239);
+            this.Velocidadtxt.Location = new System.Drawing.Point(200, 207);
             this.Velocidadtxt.Name = "Velocidadtxt";
             this.Velocidadtxt.Size = new System.Drawing.Size(268, 20);
             this.Velocidadtxt.TabIndex = 30;
+            this.Velocidadtxt.TextChanged += new System.EventHandler(this.Velocidadtxt_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 241);
+            this.label2.Location = new System.Drawing.Point(36, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 18);
             this.label2.TabIndex = 29;
             this.label2.Text = "Velocidad";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numAlastxt
             // 
-            this.numAlastxt.Location = new System.Drawing.Point(200, 201);
+            this.numAlastxt.Location = new System.Drawing.Point(200, 169);
             this.numAlastxt.Name = "numAlastxt";
             this.numAlastxt.Size = new System.Drawing.Size(268, 20);
             this.numAlastxt.TabIndex = 28;
+            this.numAlastxt.TextChanged += new System.EventHandler(this.numAlastxt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 203);
+            this.label1.Location = new System.Drawing.Point(36, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 18);
             this.label1.TabIndex = 27;
             this.label1.Text = "Numero de Alas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // GuardarButton
             // 
@@ -96,7 +100,7 @@ namespace Tarea2_NSB.Ejercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 303);
+            this.ClientSize = new System.Drawing.Size(622, 270);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.Velocidadtxt);
@@ -106,6 +110,10 @@ namespace Tarea2_NSB.Ejercicio2
             this.Name = "rAereo";
             this.Text = "Registro de Vehiculos Aereos";
             this.Load += new System.EventHandler(this.rAereo_Load);
+            this.Controls.SetChildIndex(this.marcaTextBox, 0);
+            this.Controls.SetChildIndex(this.anioTextBox, 0);
+            this.Controls.SetChildIndex(this.placaTextBox, 0);
+            this.Controls.SetChildIndex(this.combustibleTextBox, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.numAlastxt, 0);
             this.Controls.SetChildIndex(this.label2, 0);
