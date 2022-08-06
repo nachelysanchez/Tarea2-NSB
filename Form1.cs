@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tarea2_NSB.Ejercicio1;
+using Tarea2_NSB.Ejercicio2;
 
 namespace Tarea2_NSB
 {
@@ -27,7 +28,8 @@ namespace Tarea2_NSB
 
         private void compaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            VehiculosForm vehiculo = new VehiculosForm();
+            vehiculo.Show();
         }
     }
 }

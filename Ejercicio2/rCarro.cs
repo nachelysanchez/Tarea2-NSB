@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Tarea2_NSB.Ejercicio2
 {
-    public partial class VehiculosForm : Form
+    public partial class rCarro : VehiculoGeneralFrm
     {
-        public VehiculosForm()
+        public rCarro()
         {
             InitializeComponent();
         }
 
-        private void carrosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void rCarro_Load(object sender, EventArgs e)
         {
-            rCarro rCarro = new rCarro();
-            rCarro.Show();
+
         }
     }
 }
