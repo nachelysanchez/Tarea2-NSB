@@ -32,13 +32,16 @@ namespace Tarea2_NSB
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ejercicio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejercicio1ToolStripMenuItem});
+            this.ejercicio1ToolStripMenuItem,
+            this.ejercicio2ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
@@ -57,9 +60,24 @@ namespace Tarea2_NSB
             // nominaToolStripMenuItem
             // 
             this.nominaToolStripMenuItem.Name = "nominaToolStripMenuItem";
-            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.nominaToolStripMenuItem.Text = "Nomina";
             this.nominaToolStripMenuItem.Click += new System.EventHandler(this.nominaToolStripMenuItem_Click);
+            // 
+            // ejercicio2ToolStripMenuItem
+            // 
+            this.ejercicio2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.compaToolStripMenuItem});
+            this.ejercicio2ToolStripMenuItem.Name = "ejercicio2ToolStripMenuItem";
+            this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(72, 19);
+            this.ejercicio2ToolStripMenuItem.Text = "Ejercicio 2";
+            // 
+            // compaToolStripMenuItem
+            // 
+            this.compaToolStripMenuItem.Name = "compaToolStripMenuItem";
+            this.compaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.compaToolStripMenuItem.Text = "Compañia Turistica";
+            this.compaToolStripMenuItem.Click += new System.EventHandler(this.compaToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -84,6 +102,8 @@ namespace Tarea2_NSB
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nominaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compaToolStripMenuItem;
     }
 }
 

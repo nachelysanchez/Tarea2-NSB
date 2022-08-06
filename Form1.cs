@@ -23,5 +23,11 @@ namespace Tarea2_NSB
             NominaForm nomina = new NominaForm();
             nomina.Show();
         }
+
+
+        private void compaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

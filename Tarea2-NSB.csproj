@@ -46,12 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClasesEj2\Aereo.cs" />
+    <Compile Include="ClasesEj2\Carro.cs" />
+    <Compile Include="ClasesEj2\Helicoptero.cs" />
+    <Compile Include="ClasesEj2\Lancha.cs" />
+    <Compile Include="ClasesEj2\Maritimo.cs" />
+    <Compile Include="ClasesEj2\Terrestre.cs" />
+    <Compile Include="ClasesEj2\Vehiculo.cs" />
     <Compile Include="Clases\claNomina.cs" />
     <Compile Include="Ejercicio1\NominaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio1\NominaForm.Designer.cs">
       <DependentUpon>NominaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio2\VehiculosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\VehiculosForm.Designer.cs">
+      <DependentUpon>VehiculosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -63,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ejercicio1\NominaForm.resx">
       <DependentUpon>NominaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2\VehiculosForm.resx">
+      <DependentUpon>VehiculosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
