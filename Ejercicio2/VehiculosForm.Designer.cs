@@ -96,8 +96,9 @@ namespace Tarea2_NSB.Ejercicio2
             // verTransportesToolStripMenuItem
             // 
             this.verTransportesToolStripMenuItem.Name = "verTransportesToolStripMenuItem";
-            this.verTransportesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.verTransportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verTransportesToolStripMenuItem.Text = "Ver Transportes";
+            this.verTransportesToolStripMenuItem.Click += new System.EventHandler(this.verTransportesToolStripMenuItem_Click);
             // 
             // reservacionesToolStripMenuItem
             // 

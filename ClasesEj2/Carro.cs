@@ -9,7 +9,7 @@ namespace Tarea2_NSB.ClasesEj2
     class Carro : Terrestre
     {
         private int numeroRuedas;
-        private List<Carro> carros;
+        private static List<Carro> carros = new List<Carro>();
         public List<Carro> Carros
         {
             set
@@ -29,8 +29,13 @@ namespace Tarea2_NSB.ClasesEj2
             }
             get
             {
-                return NumeroRuedas;
+                return numeroRuedas;
             }
+        }
+
+        public Carro()
+        {
+            return;
         }
         public Carro(string marca, int anio, string placa, string combustible, int numeroRuedas, int numeroPuertas, bool ocupado)
         {

@@ -34,5 +34,11 @@ namespace Tarea2_NSB.Ejercicio2
             rAereo aire = new rAereo();
             aire.Show();
         }
+
+        private void verTransportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cTransportesTerrestres terrestres = new cTransportesTerrestres();
+            terrestres.Show();
+        }
     }
 }

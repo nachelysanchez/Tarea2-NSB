@@ -106,6 +106,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.Controls.Add(this.label1);
             this.Name = "rAereo";
             this.Text = "Registro de Vehiculos Aereos";
+            this.Load += new System.EventHandler(this.rAereo_Load);
             this.Controls.SetChildIndex(this.marcaTextBox, 0);
             this.Controls.SetChildIndex(this.anioTextBox, 0);
             this.Controls.SetChildIndex(this.placaTextBox, 0);

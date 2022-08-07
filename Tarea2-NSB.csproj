@@ -60,6 +60,12 @@
     <Compile Include="Ejercicio1\NominaForm.Designer.cs">
       <DependentUpon>NominaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ejercicio2\cTransportesTerrestres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\cTransportesTerrestres.Designer.cs">
+      <DependentUpon>cTransportesTerrestres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejercicio2\rAereo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ejercicio1\NominaForm.resx">
       <DependentUpon>NominaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2\cTransportesTerrestres.resx">
+      <DependentUpon>cTransportesTerrestres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2\rAereo.resx">
       <DependentUpon>rAereo.cs</DependentUpon>

@@ -83,5 +83,10 @@ namespace Tarea2_NSB.Ejercicio2
             }
             return paso;
         }
+
+        private void rAereo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
