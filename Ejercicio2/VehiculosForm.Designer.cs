@@ -39,6 +39,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservarUnVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +114,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.reservarUnVehiculoToolStripMenuItem.Name = "reservarUnVehiculoToolStripMenuItem";
             this.reservarUnVehiculoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.reservarUnVehiculoToolStripMenuItem.Text = "Reservar un vehiculo";
+            this.reservarUnVehiculoToolStripMenuItem.Click += new System.EventHandler(this.reservarUnVehiculoToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -125,16 +127,29 @@ namespace Tarea2_NSB.Ejercicio2
             this.label1.TabIndex = 1;
             this.label1.Text = "Compañia Turistica";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(524, 189);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 44);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VehiculosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 245);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "VehiculosForm";
             this.Text = "VehiculosForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VehiculosForm_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -154,5 +169,6 @@ namespace Tarea2_NSB.Ejercicio2
         private System.Windows.Forms.ToolStripMenuItem reservacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservarUnVehiculoToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -78,6 +78,12 @@
     <Compile Include="Ejercicio2\rCarro.Designer.cs">
       <DependentUpon>rCarro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ejercicio2\ReservaVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\ReservaVehiculo.Designer.cs">
+      <DependentUpon>ReservaVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejercicio2\rMaritimo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2\rCarro.resx">
       <DependentUpon>rCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2\ReservaVehiculo.resx">
+      <DependentUpon>ReservaVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2\rMaritimo.resx">
       <DependentUpon>rMaritimo.cs</DependentUpon>

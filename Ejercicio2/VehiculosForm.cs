@@ -40,5 +40,21 @@ namespace Tarea2_NSB.Ejercicio2
             cTransportesTerrestres terrestres = new cTransportesTerrestres();
             terrestres.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void VehiculosForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void reservarUnVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReservaVehiculo reserva = new ReservaVehiculo();
+            reserva.Show();
+        }
     }
 }

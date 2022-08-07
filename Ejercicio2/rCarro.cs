@@ -26,14 +26,14 @@ namespace Tarea2_NSB.Ejercicio2
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
-            carro = new Carro(marcaTextBox.Text, int.Parse(anioTextBox.Text), placaTextBox.Text,
-                combustibleTextBox.Text, int.Parse(numRuedastxt.Text), int.Parse(numPuertastxt.Text), false);
+
 
             if (!Validar())
             {
                 return;
             }
-
+            carro = new Carro(marcaTextBox.Text, int.Parse(anioTextBox.Text), placaTextBox.Text,
+                            combustibleTextBox.Text, int.Parse(numRuedastxt.Text), int.Parse(numPuertastxt.Text), false);
 
             foreach (var dato in carro.Carros)
             {
