@@ -8,8 +8,22 @@ namespace Tarea2_NSB.ClasesEj2
 {
     class Helicoptero : Aereo
     {
+        private List<Helicoptero> helicopteros;
         private double velocidad;
-        protected double Velocidad
+
+        public List<Helicoptero> Helicopteros
+        {
+            get
+            {
+                return helicopteros;
+            }
+            set
+            {
+                helicopteros = value;
+            }
+        }
+
+        public double Velocidad
         {
             set
             {

@@ -43,7 +43,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.Velocidadtxt.Name = "Velocidadtxt";
             this.Velocidadtxt.Size = new System.Drawing.Size(268, 20);
             this.Velocidadtxt.TabIndex = 30;
-            this.Velocidadtxt.TextChanged += new System.EventHandler(this.Velocidadtxt_TextChanged);
             // 
             // label2
             // 
@@ -54,7 +53,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.label2.Size = new System.Drawing.Size(81, 18);
             this.label2.TabIndex = 29;
             this.label2.Text = "Velocidad";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numAlastxt
             // 
@@ -62,7 +60,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.numAlastxt.Name = "numAlastxt";
             this.numAlastxt.Size = new System.Drawing.Size(268, 20);
             this.numAlastxt.TabIndex = 28;
-            this.numAlastxt.TextChanged += new System.EventHandler(this.numAlastxt_TextChanged);
             // 
             // label1
             // 
@@ -73,7 +70,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.label1.Size = new System.Drawing.Size(127, 18);
             this.label1.TabIndex = 27;
             this.label1.Text = "Numero de Alas";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // GuardarButton
             // 
@@ -84,6 +80,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.GuardarButton.TabIndex = 31;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // label8
             // 
@@ -109,7 +106,6 @@ namespace Tarea2_NSB.Ejercicio2
             this.Controls.Add(this.label1);
             this.Name = "rAereo";
             this.Text = "Registro de Vehiculos Aereos";
-            this.Load += new System.EventHandler(this.rAereo_Load);
             this.Controls.SetChildIndex(this.marcaTextBox, 0);
             this.Controls.SetChildIndex(this.anioTextBox, 0);
             this.Controls.SetChildIndex(this.placaTextBox, 0);

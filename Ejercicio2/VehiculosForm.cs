@@ -28,5 +28,11 @@ namespace Tarea2_NSB.Ejercicio2
             rMaritimo mar = new rMaritimo();
             mar.Show();
         }
+
+        private void helicopterosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rAereo aire = new rAereo();
+            aire.Show();
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace Tarea2_NSB.ClasesEj2
     class Aereo : Vehiculo
     {
         private int numeroAlas;
-        protected int  NumeroAlas
+        public int  NumeroAlas
         {
             set
             {

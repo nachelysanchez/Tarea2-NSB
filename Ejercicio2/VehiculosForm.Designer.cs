@@ -83,6 +83,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.helicopterosToolStripMenuItem.Name = "helicopterosToolStripMenuItem";
             this.helicopterosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.helicopterosToolStripMenuItem.Text = "Helicopteros";
+            this.helicopterosToolStripMenuItem.Click += new System.EventHandler(this.helicopterosToolStripMenuItem_Click);
             // 
             // transportesToolStripMenuItem
             // 
@@ -95,7 +96,7 @@ namespace Tarea2_NSB.Ejercicio2
             // verTransportesToolStripMenuItem
             // 
             this.verTransportesToolStripMenuItem.Name = "verTransportesToolStripMenuItem";
-            this.verTransportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verTransportesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.verTransportesToolStripMenuItem.Text = "Ver Transportes";
             // 
             // reservacionesToolStripMenuItem
