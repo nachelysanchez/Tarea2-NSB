@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tarea2_NSB.ClasesEj2;
 
 namespace Tarea2_NSB.Ejercicio2
 {
     public partial class rMaritimo : VehiculoGeneralFrm
     {
+        Lancha lancha;
         public rMaritimo()
         {
             InitializeComponent();
@@ -24,9 +26,27 @@ namespace Tarea2_NSB.Ejercicio2
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
+            lancha = new Lancha(marcaTextBox.Text, int.Parse(anioTextBox.Text), placaTextBox.Text,
+                combustibleTextBox.Text, int.Parse(numAlastxt.Text), int.Parse(Tamanotxt.Text), false);
+
+            if (!Validar())
+            {
+                return;
+            }
+
             
+            foreach (var dato in lancha.Lanchas)
+            {
+                if(dato.Placa == placaTextBox.Text)
+                {
+                    MessageBox.Show("La placa ingresada ya existe");
+                    placaTextBox.Focus();
+                    return;
+                }
+            }
 
-
+            lancha.Lanchas.Add(lancha);
+            MessageBox.Show("Vehiculo creado", "Exito", MessageBoxButtons.OK);
         }
 
         private bool Validar()

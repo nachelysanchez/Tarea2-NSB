@@ -80,6 +80,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.GuardarButton.TabIndex = 27;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // label8
             // 

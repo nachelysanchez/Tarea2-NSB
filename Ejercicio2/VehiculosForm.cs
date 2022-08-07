@@ -22,5 +22,11 @@ namespace Tarea2_NSB.Ejercicio2
             rCarro rCarro = new rCarro();
             rCarro.Show();
         }
+
+        private void lanchasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rMaritimo mar = new rMaritimo();
+            mar.Show();
+        }
     }
 }

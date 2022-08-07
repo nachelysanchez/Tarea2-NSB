@@ -9,7 +9,19 @@ namespace Tarea2_NSB.ClasesEj2
     class Carro : Terrestre
     {
         private int numeroRuedas;
-        protected int NumeroRuedas
+        private List<Carro> carros;
+        public List<Carro> Carros
+        {
+            set
+            {
+                carros = value;
+            }
+            get
+            {
+                return carros;
+            }
+        }
+        public int NumeroRuedas
         {
             set
             {

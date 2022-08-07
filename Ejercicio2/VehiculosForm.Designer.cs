@@ -76,6 +76,7 @@ namespace Tarea2_NSB.Ejercicio2
             this.lanchasToolStripMenuItem.Name = "lanchasToolStripMenuItem";
             this.lanchasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lanchasToolStripMenuItem.Text = "Lanchas";
+            this.lanchasToolStripMenuItem.Click += new System.EventHandler(this.lanchasToolStripMenuItem_Click);
             // 
             // helicopterosToolStripMenuItem
             // 

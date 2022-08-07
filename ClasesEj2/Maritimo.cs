@@ -10,7 +10,7 @@ namespace Tarea2_NSB.ClasesEj2
     {
         private int numeroHelices;
 
-        protected int NumeroHelices
+        public int NumeroHelices
         {
             set
             {

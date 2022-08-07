@@ -13,7 +13,7 @@ namespace Tarea2_NSB.ClasesEj2
 
         
 
-        protected int NumeroPuertas
+        public int NumeroPuertas
         {
             set
             {

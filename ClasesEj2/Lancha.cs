@@ -12,7 +12,7 @@ namespace Tarea2_NSB.ClasesEj2
 
         private static List<Lancha> lanchas = new List<Lancha>();
 
-        protected List<Lancha> Lanchas
+        public List<Lancha> Lanchas
         {
             get
             {
@@ -36,6 +36,16 @@ namespace Tarea2_NSB.ClasesEj2
             }
         }
 
+        public Lancha()
+        {
+            Marca = "";
+            Anio = 0;
+            Placa = "";
+            Combustible = "";
+            NumeroHelices = 0;
+            Tamanio = 0;
+            Ocupado = false;
+        }
         public Lancha(string marca, int anio, string placa, string combustible, int numeroHelices, int tamano, bool ocupado)
         {
             Marca = marca;

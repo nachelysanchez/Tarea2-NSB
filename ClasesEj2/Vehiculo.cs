@@ -14,7 +14,7 @@ namespace Tarea2_NSB.ClasesEj2
         private string combustible;
         private bool ocupado;
 
-        protected string Marca
+        public string Marca
         {
             set
             {
@@ -25,7 +25,7 @@ namespace Tarea2_NSB.ClasesEj2
                 return marca;
             }
         }
-        protected int Anio
+        public int Anio
         {
             set
             {
@@ -36,7 +36,7 @@ namespace Tarea2_NSB.ClasesEj2
                 return anio;
             }
         }
-        protected string Placa
+        public string Placa
         {
             set
             {
@@ -47,7 +47,7 @@ namespace Tarea2_NSB.ClasesEj2
                 return placa;
             }
         }
-        protected string Combustible
+        public string Combustible
         {
             set
             {
@@ -59,7 +59,7 @@ namespace Tarea2_NSB.ClasesEj2
             }
         }
 
-        protected bool Ocupado
+        public bool Ocupado
         {
             set
             {
